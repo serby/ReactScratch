@@ -1,0 +1,18 @@
+{
+  "extends": ["standard", "standard-react"],
+
+  "rules": {
+    "jsx-quotes": [2, "prefer-double"],
+    "react/forbid-prop-types": [2, {"forbid":["object", "array"]}]
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "globals": { API_URL: true },
+  "plugins": [
+    "react"
+  ]
+}

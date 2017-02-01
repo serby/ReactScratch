@@ -1,0 +1,119 @@
+//
+// SETTINGS
+// ========
+// Project specific settings which can be changed to modify the basic look and
+// feel of the project with little effort.
+//
+// 1. BREAKPOINTS AND MEDIA QUERIES
+// 2. COLOURS
+// 3. TYPEFACES
+// 4. BASE STYLES
+// 5. GRID
+// 6. DEFAULT ENVIRONMENT
+//
+
+
+//
+// 1. BREAKPOINTS AND MEDIA QUERIES
+// Setup standard widths to pass to media queries
+//
+
+$mq--mobile--portrait  = 300px
+$mq--mobile--landscape = 400px
+$mq--tablet--portrait  = 550px
+$mq--tablet--landscape = 800px
+$mq--desktop--small    = 960px
+$mq--desktop--medium   = 1280px
+$mq--desktop--large    = 1600px
+
+// Common aliases
+$mq--mobile  = $mq--mobile--portrait
+$mq--tablet  = $mq--tablet--portrait
+$mq--desktop = $mq--desktop--small
+
+
+//
+// 2. COLOURS
+//
+
+// Common Project Colours
+$color--blue  = #0095da
+$color--black = #222
+$color--grey  = #ccc
+$color--white = #fff
+
+$color--gearbox-red-dark = #9e2b1e
+$color--gearbox-red = #C63626
+$color--gearbox-red-light = #E06B5E
+
+$color--gearbox-dark-grey = #747373
+$color--gearbox-light-grey = #d9d6cf
+$color--gearbox-off-white = #E7E4E2
+
+$color--gearbox-black = #000000
+$color--gearbox-black-light = #333333
+$color--gearbox-black-lighter = #666666
+$color--gearbox-black-lightest = #999999
+
+$color--spotify-green = #1ED760
+
+
+// Brand Colours
+$color--primary = $color--gearbox-red
+
+// Default Notification Colours
+$color--success = #47a967
+$color--notice  = #4791a9
+$color--warning = #dc7f2a
+$color--error   = #ca4427
+
+// Style guide Colours
+$color--sg-font  = #3c4858
+$color--sg-grey = #e0e6ed
+$color--sg-lightgrey = #f8f8f8
+
+
+//
+// 3. TYPEFACES
+// Amend variable names to suit fonts used.
+//
+
+$font--arial   = Arial, Helvetica, sans-serif
+$font--georgia = Georgia, serif
+$font--pt-sans-narrow = 'PT Sans', sans-serif
+
+//
+// 4. BASE STYLES
+//
+
+$base--font-heading = $font--pt-sans-narrow
+$base--font-body    = $font--pt-sans-narrow
+$base--font-color   = $color--black
+$base--font-size    = 16px
+$base--line-height  = 1.5
+$base--spacing      = rem(20)
+$base--body-bg      = $color--white
+$base--max-width    = rem(1280)
+
+$content--gutter = $base--spacing
+$content--gutter--mobile = ($base--spacing / 2)
+
+// Navigaiton base--line-height
+$navigaiton--height = rem(70)
+
+
+//
+// 5. GRID
+//
+
+$grid--gutter = $base--spacing
+
+
+//
+// 6. DEFAULT ENVIRONMENT
+// Projects may optionally pass through an environment variable to dictate
+// whether development specific stylesheets are compiled into the final CSS.
+// Set this variable to anything other than 'development' to manually override.
+//
+
+$environment ?= $ENV || 'development'
