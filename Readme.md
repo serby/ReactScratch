@@ -1,5 +1,7 @@
 # React Scratch
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/serby/ReactScratch.svg)](https://greenkeeper.io/)
+
 React Scratch Pad§
 
 ## Setup
